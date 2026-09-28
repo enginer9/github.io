@@ -10,36 +10,33 @@ Statik site (derleme gerekmez). İçindekiler:
 | `app-ads.txt` | AdMob doğrulaması (sitenin **kök dizininde** olmalı) |
 | `assets/site.js` | Play Store adresi ve iletişim e-postası ayarı |
 
-## 1. Yayınlamadan önce doldur
+## 1. Bilgiler (dolduruldu ✓)
 
-1. `gizlilik-politikasi.html` ve `hesap-silme.html` içinde `[GELİŞTİRİCİ ADI]` ve `[İLETİŞİM E-POSTASI]` yazan her yeri değiştir
-   (Not Defteri → Düzen → Değiştir → Tümünü Değiştir).
-2. `app-ads.txt` → `pub-XXXXXXXXXXXXXXXX` yerine AdMob **yayıncı kimliğini** yaz
-   (AdMob → Ayarlar → Hesap bilgileri → Yayıncı kimliği, `pub-` ile başlar).
-3. `assets/site.js` → `CONTACT_EMAIL` satırına e-postanı yaz. `PLAY_URL`'i uygulama yayınlanınca doldurursun.
+- Geliştirici: Budeenos · İletişim: gizlilik ve hesap silme sayfalarında + `assets/site.js`
+- AdMob yayıncı kimliği: `app-ads.txt` içinde
+- Uygulama yayınlanınca: `assets/site.js` → `PLAY_URL` satırına mağaza adresini yaz.
 
 ## 2. GitHub Pages ile ücretsiz yayınla
 
-> ⚠️ `app-ads.txt`'nin sitenin kökünde olması için depo adı **tam olarak** `KULLANICIADIN.github.io` olmalı
-> (ör. kullanıcı adın `enginertug` ise depo adı `enginertug.github.io`).
+> ⚠️ `app-ads.txt` sitenin kökünde olsun diye depo adı **tam olarak** `enginer9.github.io` olmalı.
 
 1. github.com'da ücretsiz hesap aç (yoksa).
-2. Sağ üst **+** → **New repository** → Repository name: `KULLANICIADIN.github.io` → **Public** → **Create repository**.
+2. Sağ üst **+** → **New repository** → Repository name: `enginer9.github.io` → **Public** → **Create repository**.
 3. Açılan sayfada **uploading an existing file** bağlantısına tıkla → bu klasördeki **tüm dosya ve klasörleri**
    (`index.html`, `gizlilik-politikasi.html`, `hesap-silme.html`, `app-ads.txt`, `.nojekyll`, `assets` klasörü) sürükle bırak → **Commit changes**.
 4. Depoda **Settings → Pages** → Source: **Deploy from a branch**, Branch: **main / (root)** → **Save**.
-5. 1-2 dakika sonra site açılır: `https://KULLANICIADIN.github.io`
+5. 1-2 dakika sonra site açılır: `https://enginer9.github.io`
 
 Kontrol et:
-- `https://KULLANICIADIN.github.io/app-ads.txt` → tek satırlık metin görünmeli
-- `https://KULLANICIADIN.github.io/gizlilik-politikasi.html`
-- `https://KULLANICIADIN.github.io/hesap-silme.html`
+- `https://enginer9.github.io/app-ads.txt` → tek satırlık metin görünmeli
+- `https://enginer9.github.io/gizlilik-politikasi.html`
+- `https://enginer9.github.io/hesap-silme.html`
 
 ## 3. Adresleri nereye gireceksin
 
 | Yer | Alan | Adres |
 |---|---|---|
-| Play Console → Mağaza ayarları → İletişim bilgileri | Web sitesi | `https://KULLANICIADIN.github.io` |
+| Play Console → Mağaza ayarları → İletişim bilgileri | Web sitesi | `https://enginer9.github.io` |
 | Play Console → Uygulama içeriği → Gizlilik politikası | URL | `…/gizlilik-politikasi.html` |
 | Play Console → Uygulama içeriği → Veri güvenliği → Hesap silme | URL | `…/hesap-silme.html` |
 | AdMob → Gizlilik ve mesajlaşma → GDPR mesajı | Gizlilik politikası | `…/gizlilik-politikasi.html` |

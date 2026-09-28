@@ -5,7 +5,7 @@
 // Örnek: "https://play.google.com/store/apps/details?id=com.enginertug.sumrushlive"
 const PLAY_URL = "";
 // İletişim e-postası (alt bilgideki "İletişim" bağlantısı).
-const CONTACT_EMAIL = "";
+const CONTACT_EMAIL = "engin.ertug.ee@gmail.com";
 // ============================================================
 
 document.querySelectorAll(".js-play").forEach((a) => {
